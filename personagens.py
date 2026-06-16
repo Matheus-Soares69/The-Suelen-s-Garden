@@ -14,7 +14,7 @@ class Jogador(Personagem):
   def mostrar_local(self):
     print(f"{self.nome} esta no {self.local_atual.nome}")
     
-  def viajar(self, novo_local):
+  def viajar(self, novo_local,personagem):
     self.local_atual.remove(personagem)
     self.nome(novo_local)
       
