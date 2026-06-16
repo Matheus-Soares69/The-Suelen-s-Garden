@@ -1,4 +1,4 @@
-from personagens import viajar
+from personagens import suelen, jardim
 def iniciar_jogo():
     print("===========================")
     print("Casa da Suelen")

@@ -14,9 +14,10 @@ class Jogador(Personagem):
   def mostrar_local(self):
     print(f"{self.nome} esta no {self.local_atual.nome}")
     
-  def viajar(self, novo_local,personagem):
-    self.local_atual.remove(personagem)
-    self.nome(novo_local)
+  def viajar(self, novo_local):
+    self.local_atual.remover_personagens(self)
+    self.local_atual = novo_local
+    novo_local.adicionar_personagens(self)
       
       
     
@@ -54,22 +55,15 @@ norman = Norman("Normando", "Miau!")
 sapo = Sapo("Sapo", "Croax!")
 michael = Michael("Michael Jackson", "Hee Hee!")
 suelen = Jogador("Suelen", "Divou Mona!", jardim)
+jardim.adicionar_personagens(suelen)
 
 
+suelen.mostrar_local()
 
-norman.falar()
-sapo.falar()
-michael.falar()
-suelen.falar()
+suelen.viajar(campo_d_flor)
 
-jardim.adicionar_personagens(norman)
-jardim.adicionar_personagens(sapo)
-
-jardim.mostrar_personagens()
-
-campo_d_flor.adicionar_personagens(suelen)
-campo_d_flor.adicionar_personagens(michael)
+suelen.mostrar_local()
 
 campo_d_flor.mostrar_personagens()
 
-suelen.mostrar_local()
+
