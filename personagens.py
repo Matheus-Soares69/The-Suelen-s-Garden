@@ -50,6 +50,8 @@ class Local():
 
 jardim = Local("jardim")
 campo_d_flor = Local("Campo de Flores")
+lago = Local("Lago das capivaras")
+casa = Local("Casa da Suelen")
 
 norman = Norman("Normando", "Miau!")
 sapo = Sapo("Sapo", "Croax!")
@@ -58,12 +60,6 @@ suelen = Jogador("Suelen", "Divou Mona!", jardim)
 jardim.adicionar_personagens(suelen)
 
 
-suelen.mostrar_local()
 
-suelen.viajar(campo_d_flor)
-
-suelen.mostrar_local()
-
-campo_d_flor.mostrar_personagens()
 
 

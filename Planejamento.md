@@ -40,3 +40,7 @@ Descoberta do Vizinho
 - Mostrar arte pixelada especial da Suelen em choque.
 - Caixa de diálogo:
   "MICHAEL JACKSON?!?!?!?"
+
+
+
+  - para o futuro fazer cada local virar uma função
