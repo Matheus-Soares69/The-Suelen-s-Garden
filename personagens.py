@@ -48,16 +48,17 @@ class Local():
       print(f"- {personagem.nome}")
   
 
-jardim = Local("jardim")
-campo_d_flor = Local("Campo de Flores")
-lago = Local("Lago das capivaras")
-casa = Local("Casa da Suelen")
+jardim_local = Local("jardim")
+campo_d_flor_local = Local("Campo de Flores")
+lago_local = Local("Lago das capivaras")
+casa_local = Local("Casa da Suelen")
+casa_michael_local = Local("Casa M.Jackson")
 
 norman = Norman("Normando", "Miau!")
 sapo = Sapo("Sapo", "Croax!")
 michael = Michael("Michael Jackson", "Hee Hee!")
-suelen = Jogador("Suelen", "Divou Mona!", jardim)
-jardim.adicionar_personagens(suelen)
+suelen = Jogador("Suelen", "Divou Mona!", jardim_local)
+jardim_local.adicionar_personagens(suelen)
 
 
 
